@@ -1,2 +1,11 @@
 *.class
 *.log
+
+.idea/
+target/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.iml
