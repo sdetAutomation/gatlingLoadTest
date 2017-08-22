@@ -19,7 +19,7 @@ This project was written using IntelliJ IDEA Community Edition.
 
 Getting Started
 -----
-This project was created using Gatling?s Maven Archetype via IntelliJ IDE.
+This project was created using Gatling's Maven Archetype via IntelliJ IDE.
 
 For more information: http://gatling.io/docs/current/extensions/maven_archetype/
 
