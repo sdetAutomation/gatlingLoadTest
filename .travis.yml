@@ -1,4 +1,4 @@
 language: scala
 scala:
-  - sbt -jvm-opts travis/jvmopts.compile ... compile
+  sbt ++$TRAVIS_SCALA_VERSION test
 
