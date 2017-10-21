@@ -66,7 +66,3 @@ Viewing Test Results
     in this folder you will see 2 .html files.  > open any of the 2 files with your favorite web browser > you will see
     a detailed test results report.
     
-
-Continuous Integration(CI)
-------------
-A web hook has been setup with Travis CI for all Push and Pull Requests.
