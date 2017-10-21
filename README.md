@@ -24,19 +24,19 @@ This project was created using Gatling's Maven Archetype via IntelliJ IDE.
 
 1) IntelliJ 
 
-            Go to File > select New > select Project > select Maven as project type > check "Create from archetype" >
-            click "Add Archetype..." button > GroupId: io.gatling.highcharts > ArtifactId: gatling-highcharts-maven-archetype >
-            Version: 2.3.0 > do not need to enter Repository > next complete the normal project creation steps. 
-            
-            Once all your creation steps are complete IntelliJ will begin to pull down the neccesary dependenies and help you 
-            structure your project.
+    Go to File > select New > select Project > select Maven as project type > check "Create from archetype" >
+    click "Add Archetype..." button > GroupId: io.gatling.highcharts > ArtifactId: gatling-highcharts-maven-archetype >
+    Version: 2.3.0 > do not need to enter Repository > next complete the normal project creation steps. 
+    
+    Once all your creation steps are complete IntelliJ will begin to pull down the neccesary dependenies and help you 
+    structure your project.
 
 For more information: http://gatling.io/docs/current/extensions/maven_archetype/
 
     
 2) Apache Maven is required for test execution.  
 
-        For Maven installation instructions:  https://maven.apache.org/install.html
+    For Maven installation instructions:  https://maven.apache.org/install.html     
     
     
 Test Api Urls
