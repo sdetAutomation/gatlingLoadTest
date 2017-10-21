@@ -1,5 +1,4 @@
 language: java
 sudo: false
 script:
-- mvn clean
-- mvn compile
+- sbt -jvm-opts travis/jvmopts.compile ... compile
