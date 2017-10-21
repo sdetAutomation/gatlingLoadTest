@@ -7,14 +7,8 @@
 	<version>1.0-SNAPSHOT</version>
 
 	<properties>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<gatling.version>${project.version}</gatling.version>
 		<gatling-plugin.version>2.2.4</gatling-plugin.version>
-		<scala.version>2.11.8</scala.version>
-		<gatling.version>2.3.0</gatling.version>
-		<scala-maven-plugin.version>3.2.2</scala-maven-plugin.version>
 	</properties>
 
 	<dependencies>
@@ -28,11 +22,6 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>net.alchim31.maven</groupId>
-				<artifactId>scala-maven-plugin</artifactId>
-				<version>${scala-maven-plugin.version}</version>
-			</plugin>
 			<plugin>
 				<groupId>io.gatling</groupId>
 				<artifactId>gatling-maven-plugin</artifactId>
