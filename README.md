@@ -21,6 +21,7 @@ Getting Started
 -----
 This project was created using Gatling's Maven Archetype via IntelliJ IDE.
 
+
 1) IntelliJ 
 
             Go to File > select New > select Project > select Maven as project type > check "Create from archetype" >
@@ -64,3 +65,8 @@ Viewing Test Results
     Navigate to your project root > target folder > gatling > you will see a folder named for example: getexample-1508610759280 > 
     in this folder you will see 2 .html files.  > open any of the 2 files with your favorite web browser > you will see
     a detailed test results report.
+    
+
+Continuous Integration(CI)
+------------
+A web hook has been setup with Travis CI for all Push and Pull Requests.
