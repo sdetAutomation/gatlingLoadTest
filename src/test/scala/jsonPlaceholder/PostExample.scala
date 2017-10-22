@@ -13,9 +13,9 @@ class PostExample  extends Simulation with Configuration {
 
   val scn = scenario("GET")
     .exec(http("post_1_reqeust")
-      .post("/posts")
-      .header("Content-Type", "application/json")
-      .check(status.not(404), status.not(500), status.is(201)))
+    .post("/posts")
+    .header("Content-Type", "application/json")
+    .check(status.not(404), status.not(500), status.is(201)))
     .pause(5)
 
   setUp(scn.inject(atOnceUsers(num_User))
