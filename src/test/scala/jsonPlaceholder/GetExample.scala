@@ -13,9 +13,9 @@ class GetExample extends Simulation with Configuration {
 
   val scn = scenario("GET")
     .exec(http("post_1_reqeust")
-      .get("/posts/1")
-      .header("Content-Type", "application/json")
-      .check(status.not(404), status.not(500), status.is(200)))
+    .get("/posts/1")
+    .header("Content-Type", "application/json")
+    .check(status.not(404), status.not(500), status.is(200)))
     .pause(5)
 
   setUp(scn.inject(atOnceUsers(num_User))
