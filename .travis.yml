@@ -1,5 +1,4 @@
-os: osx
-language: java
+language: scala
 sudo: false
 script:
 - ./mvnw  gatling:execute -Dgatling.simulationClass=computerdatabase.BasicSimulation
