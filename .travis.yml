@@ -2,9 +2,11 @@
 before_install:
  - chmod +x mvnw
 language: java
-sudo: true
+jdk:
+- oraclejdk8
+sudo: false
 script:
-- ./mvnw clean
+- mvn -N io.takari:maven:wrapper
 - ./mvnw gatling:execute -Dgatling.simulationClass=computerdatabase.BasicSimulation
 - ./mvnw -DnumOfUser=20  gatling:execute -Dgatling.simulationClass=jsonPlaceholder.GetExample
 - ./mvnw -DnumOfUser=20  gatling:execute -Dgatling.simulationClass=jsonPlaceholder.PostExample
