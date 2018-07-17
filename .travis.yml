@@ -1,6 +1,6 @@
-os: osx
-before_install:
-- brew upgrade maven
+#os: osx
+#before_install:
+#- brew upgrade maven
 
 language: java
 sudo: false
