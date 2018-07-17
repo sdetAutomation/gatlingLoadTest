@@ -3,7 +3,7 @@
 #- brew upgrade maven
 
 language: java
-sudo: false
+sudo: true
 script:
 - mvn gatling:execute -Dgatling.simulationClass=computerdatabase.BasicSimulation
 - mvn -DnumOfUser=20  gatling:execute -Dgatling.simulationClass=jsonPlaceholder.GetExample
