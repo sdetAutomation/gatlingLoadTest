@@ -5,6 +5,6 @@ before_install:
 language: java
 sudo: false
 script:
-- ./mvnw gatling:execute -Dgatling.simulationClass=computerdatabase.BasicSimulation
+#- ./mvnw gatling:execute -Dgatling.simulationClass=computerdatabase.BasicSimulation
 - ./mvnw -DnumOfUser=20  gatling:execute -Dgatling.simulationClass=jsonPlaceholder.GetExample
-- ./mvnw -DnumOfUser=20  gatling:execute -Dgatling.simulationClass=jsonPlaceholder.PostExample
+#- ./mvnw -DnumOfUser=20  gatling:execute -Dgatling.simulationClass=jsonPlaceholder.PostExample
