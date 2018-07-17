@@ -2,6 +2,7 @@ os: osx
 language: java
 sudo: true
 script:
-- sudo ./mvnw gatling:execute -Dgatling.simulationClass=computerdatabase.BasicSimulation
-- sudo ./mvnw -DnumOfUser=20  gatling:execute -Dgatling.simulationClass=jsonPlaceholder.GetExample
-- sudo ./mvnw -DnumOfUser=20  gatling:execute -Dgatling.simulationClass=jsonPlaceholder.PostExample
+- ./mvnw clean
+- ./mvnw gatling:execute -Dgatling.simulationClass=computerdatabase.BasicSimulation
+- ./mvnw -DnumOfUser=20  gatling:execute -Dgatling.simulationClass=jsonPlaceholder.GetExample
+- ./mvnw -DnumOfUser=20  gatling:execute -Dgatling.simulationClass=jsonPlaceholder.PostExample
