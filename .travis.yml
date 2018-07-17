@@ -1,4 +1,8 @@
-language: scala
+os: osx
+before_install:
+- brew install python
+
+language: java
 sudo: false
 script:
 - ./mvnw  gatling:execute -Dgatling.simulationClass=computerdatabase.BasicSimulation
