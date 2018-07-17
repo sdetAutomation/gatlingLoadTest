@@ -5,6 +5,6 @@
 language: java
 sudo: true
 script:
-- mvn gatling:execute -Dgatling.simulationClass=computerdatabase.BasicSimulation
-- mvn -DnumOfUser=20  gatling:execute -Dgatling.simulationClass=jsonPlaceholder.GetExample
-- mvn -DnumOfUser=20  gatling:execute -Dgatling.simulationClass=jsonPlaceholder.PostExample
+- sudo ./mvnw gatling:execute -Dgatling.simulationClass=computerdatabase.BasicSimulation
+- sudo ./mvnw -DnumOfUser=20  gatling:execute -Dgatling.simulationClass=jsonPlaceholder.GetExample
+- sudo ./mvnw -DnumOfUser=20  gatling:execute -Dgatling.simulationClass=jsonPlaceholder.PostExample
