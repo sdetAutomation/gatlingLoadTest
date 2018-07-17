@@ -1,7 +1,4 @@
-#os: osx
-#before_install:
-#- brew upgrade maven
-
+os: osx
 language: java
 sudo: true
 script:
