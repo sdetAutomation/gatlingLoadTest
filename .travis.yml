@@ -1,10 +1,10 @@
 os: osx
 before_install:
-- brew upgrade python
+- brew install maven
 
 language: java
 sudo: false
 script:
-#- ./mvnw gatling:execute -Dgatling.simulationClass=computerdatabase.BasicSimulation
-- ./mvnw -DnumOfUser=20  gatling:execute -Dgatling.simulationClass=jsonPlaceholder.GetExample
-#- ./mvnw -DnumOfUser=20  gatling:execute -Dgatling.simulationClass=jsonPlaceholder.PostExample
+- mvn gatling:execute -Dgatling.simulationClass=computerdatabase.BasicSimulation
+- mvn -DnumOfUser=20  gatling:execute -Dgatling.simulationClass=jsonPlaceholder.GetExample
+- mvn -DnumOfUser=20  gatling:execute -Dgatling.simulationClass=jsonPlaceholder.PostExample
