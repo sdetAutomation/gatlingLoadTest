@@ -1,6 +1,4 @@
 #os: osx
-before_install:
- - chmod +x mvnw
 language: java
 jdk:
 - oraclejdk8
