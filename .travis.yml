@@ -1,4 +1,6 @@
-os: osx
+#os: osx
+before_install:
+ - chmod +x mvnw
 language: java
 sudo: true
 script:
